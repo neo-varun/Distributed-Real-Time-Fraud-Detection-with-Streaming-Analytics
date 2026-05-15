@@ -6,7 +6,7 @@ from sliding_window import update_window
 from risk_scoring import calculate_risk_score
 from drift_detection import detect_drift
 
-model = joblib.load("../models/xgboost_fraud_model.pkl")
+model = joblib.load("../models/fraud_model.pkl")
 
 consumer = KafkaConsumer(
     "transactions",
